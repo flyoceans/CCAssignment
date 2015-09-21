@@ -1,3 +1,3 @@
 # CCAssignment
-Name: Yangqiu Peng
-Andrew ID: yangqiup
+#Name: Yangqiu Peng
+#Andrew ID: yangqiup
