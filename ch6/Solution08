@@ -1,1 +1,10 @@
-Solution08
+For the worst case, if the first time we try Nth floor, the next time we would better try (2N-1)th floor, and then we could keep the worst case equal to N all the time.
+
+(x + N)*(N - x + 1)/2 < 100
+We prefer N to be as small as we want and LHS as close to 100 as we want.
+Here is the result:
+n 14
+x 5
+
+14 27 39 50 60 69 77 84 90 95 99
+
