@@ -1,0 +1,4 @@
+That is impossible.
+31 dominos could cover 31*2 = 62 squares
+Since two diagonally opposite corners have been cut off, let assume the chessboard as a matrix, and then 
+point (0, 0) and (7, 7) are gone, and there 64-2 = 62 squares left. Every domino must cover two points that one is (odd, odd) or (even, even), and the other is (even, odd) or (odd, even), so if we delete two points belong to the first kind of points, then the rest points cannot be covered by 31 dominos.

@@ -1,0 +1,6 @@
+6.1
+Marking all the bottles as #1-20, and we could pick one pill from bottle #1, two pills from bottle #2 and k pills from #k until k = 20. Then we measure the amount weights of those pills. 
+As we know, only one bottle have 1.1 grams of pills, so if we check difference between the amounts weights, say W, and 210(1 + 2 + ... 20 = 210g), we would know the tag of bottles.
+	tag = (W - 210)*10
+
+	

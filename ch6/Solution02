@@ -1,0 +1,8 @@
+Game 1: p
+Game 2: 3p2(1-p) + p3 
+Let p = 3p2(1-p) + p3
+	1 = 3p - 2p2 (p ≠ 0)
+	p = 0.5 or 1
+Thus, if p = 1 or 0 or 0.5, obviouly game1 and game2 have the same result.
+if 0.5 < p < 1, pick game1 would have higher values.
+else if 0 < p < 1, pick game2.
