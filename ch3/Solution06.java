@@ -1,37 +1,52 @@
+import java.util.LinkedList;
+
 public class Solution06{
 	public class animalShelter{
-		Linkedlist<dogs> dog = new Linkedlist<>();
-		Linkedlist<cats> cat = new Linkedlist<>();
+		class Animal {
+			String name;
+			int order;
+			public Animal(int x, String n) {
+				this.order = x;
+				this.name = n;
 
-		void enqueue(Linkedlist item)
+			}
+		}
+		Linkedlist<Animal> dog = new Linkedlist<>();
+		Linkedlist<Animal> cat = new Linkedlist<>();
+
+		void enqueue(Animal a)
 		{
-			rear.next = item;
-			rear = rear.next;
+			if (a.name == "dog")
+				return dog.add(a(order++, "dog"));
+			if (a.name == "cat")
+				return cat.add(a.(order++, "cat"));
 		}
 
 		Object dequeueAny()
 		{
-			Linkedlist tmp = front;
-			front = front.next;
-			return tmp.data;
+			if (dog.isEmpty() && cat.isEmpty())
+				throw new Exception();
+			if (dog.isEmpty())
+				return cat.removeFirst();
+			if (cat.isEmpty())
+				return dog.removeFirst();
+			if (dog.getFirst().order > cat.getFirst().order)
+				return dog.removeFirst();
+			return cat.removeFirst();
 		}
 
-		dogs dequeueDog()
+		Animal dequeueDog()
 		{
-			while (Linkedlist.peerFirst() != dogs)
-			{
-				Linkedlist.remove();
-			}
-			return Linkedlist.pollFirst();
+			if (dog.isEmpty())
+				throw new Exception();
+			return dog.removeFirst();
 		}
 
-		cats dequeueCat()
+		Animal dequeueCat()
 		{
-			while (Linkedlist.peerFirst() != cats)
-			{
-				Linkedlist.remove();
-			}
-			return Linkedlist.pollFirst();
+			if (cat.isEmpty())
+				throw new Exception();
+			return cat.removeFirst();
 		}
 
 	}
