@@ -5,7 +5,7 @@ public class Solution03{
 	class SetOfStacks{
 		ArrayList<Stack<Object>> Arrays = new ArrayList<>();
 		private int tag = -1;
-		private int size = 0;
+		private int size;
 	
 		public void push(Object obj)
 		{

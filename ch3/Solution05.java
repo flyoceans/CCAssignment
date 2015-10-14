@@ -4,26 +4,18 @@ public class Solution05{
 	public Stack sortStack(Stack<Integer> stack){
 		Stack<Integer> tmpstack = new Stack<>();
 
-		while(!stack.isEmpty())
-		{
+		if (stack.isEmpty)
+			return stack;
+
+		while (!stack.isEmpty()) {
 			int tmp = stack.pop();
-			while (!tmpstack.isEmpty())
-			{
-				if (tmpstack.peek() < tmp)
-				{
-					stack.push(tmpstack.pop());
-				}
-				else
-				{
-					tmpstack.push(tmp);
-					break;
-				}
+			
+			while (!tmpstack.isEmpty() && tmpstack.peek() < tmp) {
+				stack.push(tmpstack.pop());
 			}
-			if (tmpstack.isEmpty())
-			{
-				tmpstack.push(tmp);
-			}
-		}	
+			tmpstack.push(tmp);
+		}
+
 		return tmpstack;
 	}
 }
