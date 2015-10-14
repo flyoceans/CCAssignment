@@ -1,7 +1,7 @@
 public class Solution06{
 
 /**
- *The main idea of this code was cited from fillchar(Hongyi Shi).
+ *The main idea of this code was cited from Hongyi Shi.
  */
 	TreeNode next = null;
 	TreeNode tmp = null;
