@@ -12,7 +12,7 @@ public class Solution1{
 		{
 			stackSize = array.length / 3;
 			sizes = new int[3];
-			value = new int[stackSize];
+			value = new int[array.length];
 		}
 
 		public void push(int stacknum, int val) throws Exception
